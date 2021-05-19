@@ -1,0 +1,86 @@
+/* 头部搜索
+---------------------------------------------------------------- */
+.header{
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid @primary-color;
+}
+.header .logo{
+    float: left;
+    line-height: 94px;
+}
+.header .logo a{
+    font-size: 30px;
+    color: @primary-color;
+    font-weight: bold;
+}
+.header .search-wrap{
+    float: left;
+}
+.header .search-wrap .search-box{
+    margin-top: 18px;
+}
+.header .search-wrap .search-input{
+    float: left;
+    width: 400px;
+    height: 38px;
+    line-height: 38px;
+    outline: none;
+    border:2px solid @primary-color;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.header .search-wrap .search-btn{
+    float: left;
+    width: 100px;
+    height: 42px;
+    line-height: 44px;
+    text-align: center;
+    background-color: @primary-color;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+.header .search-wrap .search-btn:hover{
+    opacity: .7;
+}
+.header .search-wrap .nav-list{
+    margin-top: 15px;
+}
+.header  .nav-list .nav-item{
+    float: left;
+    margin-right: 20px;
+}
+.header  .nav-list .nav-item a{
+    font-size: 16px;
+    font-weight: 200;
+}
+.header .container{
+    position: relative;
+}
+.header .search-layer{
+    display: none;
+    background-color: #FFF;
+    border: 1px solid  @primary-color;
+    width: 412px;
+    border-top:none;
+    display: block;
+    position: absolute;
+    left: 218px;
+    top: 60px;
+    z-index: 99;
+    .search-item{
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        padding-left:10px ;
+        color: #666;
+    }
+    .search-item:hover{
+        background-color:@primary-color;
+    }
+
+}
+.header .search-wrap .nav-list .nav-item a.active{
+    color:@primary-color;
+}

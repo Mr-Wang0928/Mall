@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <%= require('html-loader!./common/login.html') %>
+    <div class="form">
+		<div class="container" id="login">
+			<div class="form-box">
+				<h2 class="title">用户登录</h2>
+				<div class="error-item">
+					<i class="fa fa-minus-circle error-icon"></i>
+					<p class="error-msg">error</p>
+				</div>
+				<div class="form-item">
+					<label for="" class="form-lable">
+						<i class="iconfont icon-yonghuming"></i>
+					</label>
+					<input type="text" class="form-content" name="username" placeholder="请输入用户名">
+				</div>
+				<div class="form-item">
+					<label for="" class="form-lable">
+						<i class="iconfont icon-mimabeifen"></i>
+					</label>
+					<input type="password" class="form-content" name="password" placeholder="请输入用密码">
+				</div>
+				<div>
+					<input type="text"  class="verifyCode-input" name="verify-code" placeholder="请输入验证码">
+					<div class="captcha-img ">
+
+					</div>
+				</div>
+			
+				
+				<div class="btn-item">
+					<a href="javascript:;" class="btn btn-submit" id="btn-submit">提交</a>
+				</div>	
+				<div class="link-item">
+					<a href="./user-dynamic-login.html" class="link">验证码登录</a>
+					<a href="./user-register.html" class="link">免费注册</a>
+				</div>			
+			</div>
+		</div>
+	</div>
+    <%= require('html-loader!./common/footer.html') %>
+</body>
+</html>

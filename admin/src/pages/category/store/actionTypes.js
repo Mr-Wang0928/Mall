@@ -1,0 +1,5 @@
+export const USER_LIST = 'category@USER_LIST' 
+export const USER_PAGE_START = 'category@USER_PAGE_START' 
+export const USER_PAGE_END = 'category@USER_PAGE_END' 
+export const SET_LEVE_CATEGORIES = 'category@SET_LEVE_CATEGORIES' 
+export const CATEGORY_CLEAR_PAGES = 'category@CATEGORY_CLEAR_PAGES' 

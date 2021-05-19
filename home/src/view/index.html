@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./common/header.html') %>
+        <title>
+            <%= htmlWebpackPlugin.options.title %>
+        </title>
+        <link rel="stylesheet" href="pages/common/test.js">
+    </head>
+<body>
+    <%= require('html-loader!./common/nav.html') %>
+    <%= require('html-loader!./common/search.html') %>
+    
+    <div class="focus">
+        <div class="container clearfix">
+            <div class="category-box">
+                <ul class="categories">
+               
+                </ul>
+                <div class="child-categories">
+                   
+                </div>
+            </div>
+            
+            <div class="swiper-container">
+               <div class="swiper-wrapper">
+                    
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>      
+        </div>
+    </div>
+    <!-- 楼层部分 -->
+    <div class="floor">
+        <div class="container">
+            <div class="floor-wrap">
+                
+            </div>
+        </div>
+    </div>   
+    <!-- 电梯部分 -->
+    <div class="elevator">
+
+    </div>
+    <!-- 工具栏部分 -->
+    <div class="toolbar">
+        <a href="javascript:;" class="toolbar-item">
+            <i class="iconfont icon-users" class="item-img"></i>
+            <span class="item-name">我的</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="iconfont icon-shoucang1" class="item-img"></i>
+            <span class="item-name">收藏</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="iconfont icon-shoucang" class="item-img"></i>
+            <span class="item-name">猜你喜欢</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="iconfont icon-jubao" class="item-img"></i>
+            <span class="item-name">举报</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item gotop">
+            <i class="iconfont icon-zhiding" class="item-img"></i>
+            <span class="item-name">返回顶部</span>
+        </a>
+    </div>
+    <%= require('html-loader!./common/footer.html') %>
+</body>
+</html>

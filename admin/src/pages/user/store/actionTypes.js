@@ -1,0 +1,6 @@
+const USER_LIST = 'user@USER_LIST' 
+const USER_PAGE_START = 'user@USER_PAGE_START' 
+const USER_PAGE_END = 'user@USER_PAGE_END' 
+
+
+export {USER_LIST,USER_PAGE_START,USER_PAGE_END}
